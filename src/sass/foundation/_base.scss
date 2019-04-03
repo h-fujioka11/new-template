@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  word-wrap : break-word;
+  color: $color-gray-3;
+}
+
+a {
+  color: #222;
+}
+a,
+a:active {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  padding: 0;
+  background: none;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+::selection {
+  background: $primary-color; /* Safari */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $primary-color; /* Firefox */
+  color: #fff;
+}

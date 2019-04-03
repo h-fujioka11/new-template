@@ -1,0 +1,4 @@
+{{ $style := resources.Get "css/style.css" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
