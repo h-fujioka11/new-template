@@ -67,6 +67,9 @@ body {
   font-family: Helvetica, Arial, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.6; }
+  @media print, screen and (max-width: 961px) {
+    body {
+      color: #222; } }
 
 a {
   color: #222; }
@@ -418,7 +421,7 @@ img {
   @media print, screen and (max-width: 961px) {
     .p-contents--service {
       margin-top: 60px;
-      padding-top: 24px; } }
+      padding-top: 24px !important; } }
   .p-contents--service .inner_label::before {
     width: 70px !important; }
   @media print, screen and (min-width: 961px) {
@@ -427,7 +430,7 @@ img {
       left: -20px; } }
   @media print, screen and (max-width: 961px) {
     .p-contents--service .flex_right {
-      margin-top: 40px !important; } }
+      margin-top: 0 !important; } }
   .p-contents--service .p-contents__inner-flex {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -440,7 +443,8 @@ img {
     background: #FDF7EE; }
     @media print, screen and (max-width: 961px) {
       .p-contents--service::before {
-        height: 200px; } }
+        width: 40%;
+        height: 120px; } }
   @media print, screen and (min-width: 961px) {
     .p-contents--company {
       margin-top: 80px;
@@ -516,6 +520,7 @@ img {
     @media print, screen and (max-width: 961px) {
       .p-contents--company .inner_table-text {
         margin-top: 4px;
+        color: #333;
         font-size: 14px;
         font-size: 1.4rem;
         line-height: 1.71429; } }
@@ -533,9 +538,9 @@ img {
     text-align: center; }
     @media print, screen and (max-width: 961px) {
       .p-contents--company .inner_title {
-        font-size: 18px;
-        font-size: 1.8rem;
-        line-height: 1.77778; } }
+        font-size: 24px;
+        font-size: 2.4rem;
+        line-height: 1.33333; } }
     .p-contents--company .inner_title::before {
       position: absolute;
       bottom: 0;
@@ -571,7 +576,7 @@ img {
         line-height: 1.77778; } }
   .p-contents__inner .inner_label, .p-contents__inner-flex .inner_label {
     position: relative;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     font-family: futura-pt, sans-serif;
     font-size: 15px;
     font-size: 1.5rem;
@@ -752,7 +757,7 @@ body .js-img-animate__item {
         position: relative;
         top: -300px;
         padding: 16px 5.125%;
-        background: rgba(36, 64, 167, 0.95);
+        background: #0e173a;
         transition: 0.3s ease 0s; } }
     @media print, screen and (min-width: 961px) {
       .p-navigation__item ul li {
